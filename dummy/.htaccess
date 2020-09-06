@@ -1,0 +1,70 @@
+##################################################################################################################
+# RECOMMENDED SETTINGS
+#
+
+#Options -Indexes
+#Options -Indexes FollowSymLinks
+#Options -Indexes FollowSymLinksIfOwnerMatch
+
+##################################################################################################################
+# REWRITE ENGINE
+#
+#
+# BENOETIGT IN DER APACHE (VIRTUAL HOST) CONFIG
+# AllowOverride All
+#
+
+# Allgemein
+#RewriteEngine on
+#RewriteBase /
+
+####################################################################################
+### DEBUG ##########################################################################
+### Wenn die erste Seite eine Weiterleitung ist gibt es Probleme mit den Bildern ###
+#
+# RewriteRule ^show/(.*)$ /impressum/$1
+####################################################################################
+
+# Index Seiten umschreiben
+#RewriteRule ^$ index.html [R,L]
+#RewriteRule ^index.html$ index.php [L]
+#RewriteRule ^index.htm$ index.php [L]
+
+# Menüpunkte
+#RewriteRule ^[a-z0-9_-]{1,}/[a-z0-9_-]{1,}/user/(.*)$ user/$1 [L]
+#RewriteRule ^([a-z0-9_-]{1,})\.html$ index.php?title=$1 [L]
+
+# Kontaktformular - Sicherheitscode
+#RewriteRule ^([a-z0-9_-]{1,})/k/([a-z0-9]{1,})\.jpg$ index.php?title=$1&init=loadimg&seckey=$2 [L]
+
+# News
+#RewriteRule ^([a-z0-9_-]{1,})/n/page([0-9]{1,})\.html$ index.php?title=$1&page=$2 [L]
+#RewriteRule ^([a-z0-9_-]{1,})/n/n([0-9]{1,})\.html$ index.php?title=$1&newsid=$2&init=more [L]
+#RewriteRule ^([a-z0-9_-]{1,})/n/n([0-9]{1,})\.htm$ index.php?title=$1&newsid=$2&init=more&dad=news [L]
+
+# Gaestebuch
+#RewriteRule ^([a-z0-9_-]{1,})/g/page([0-9]{1,})\.html$ index.php?title=$1&page=$2 [L]
+#RewriteRule ^([a-z0-9_-]{1,})/g/add\.html$ index.php?title=$1&init=add [L]
+#RewriteRule ^([a-z0-9_-]{1,})/g/([a-z0-9]{1,})\.jpg$ index.php?title=$1&init=loadimg&seckey=$2 [L]
+
+# Termine
+#RewriteRule ^([a-z0-9_-]{1,})/t/t([0-9]{1,})\.html$ index.php?title=$1&timeid=$2&init=more [L]
+#RewriteRule ^([a-z0-9_-]{1,})/t/t([0-9]{1,})\.htm$ index.php?title=$1&timeid=$2&init=more&dad=time [L]
+
+# Bildergalerie
+#RewriteRule ^([a-z0-9_-]{1,})/p/group([0-9]{1,})\.html$ index.php?title=$1&group=$2&init=listgroup&dad=pics [L]
+#RewriteRule ^([a-z0-9_-]{1,})/p/details([0-9]{1,})\.html$ index.php?title=$1&pic=$2&init=details&dad=pics [L]
+#RewriteRule ^([a-z0-9_-]{1,})/p/ajaxDetails([0-9]{1,})\.html$ index.php?title=$1&ajax=true&pic=$2&init=details&dad=pics [L]
+#RewriteRule ^([a-z0-9_-]{1,})/p/page-([0-9]{1,})-([0-9]{1,})\.html$ index.php?title=$1&group=$2&page=$3&init=listgroup&dad=pics [L]
+#RewriteRule ^([a-z0-9_-]{1,})/p/small([0-9]{1,})\.jpg$ index.php?title=$1&pid=$2&init=loadimg&dad=pics&size=s&dad=pics [L]
+#RewriteRule ^([a-z0-9_-]{1,})/p/big([0-9]{1,})\.jpg$ index.php?title=$1&pid=$2&init=loadimg&dad=pics&size=b [L]
+#RewriteRule ^([a-z0-9_-]{1,})/p/ajaxTpl.html$ index.php?title=$1&init=ajaxTpl&dad=pics [L]
+#RewriteRule ^([a-z0-9_-]{1,})/p/small([0-9]{1,})_([0-9]{1,})x([0-9]{1,})\.jpg$ index.php?title=$1&pid=$2&init=loadimg&dad=pics&size=s&dad=pics&width=$3&height=$4 [L]
+#RewriteRule ^([a-z0-9_-]{1,})/p/big([0-9]{1,})_([0-9]{1,})x([0-9]{1,})\.jpg$ index.php?title=$1&pid=$2&init=loadimg&dad=pics&size=b&width=$3&height=$4 [L]
+
+#########################################################
+# INDIVIDUAL PART
+#
+
+#RewriteRule ^styles/(.*)$ /user/styles/$1 [L]
+#RewriteRule ^img/(.*)$ /user/gfx/$1 [L]

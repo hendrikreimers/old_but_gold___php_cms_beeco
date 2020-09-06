@@ -1,0 +1,34 @@
+Ändern Sie den Modus der Gruppen und klicken Sie anschließend auf "Übernehmen.<br>
+<br>
+<form method="post">
+<input type="hidden" name="action" value="attributes">
+<input type="hidden" name="init" value="update">
+<input type="hidden" name="plugin" value="pics">
+<input type="hidden" name="SID" value="%SID%">
+  <input type="button" value="Zur&uuml;ck" onClick="window.location='?action=main&plugin=pics&SID=%SID%'">
+<input type="submit" value="&Uuml;bernehmen"><br>&nbsp;
+<br>
+<br>
+  <table border="0" cellpadding="0" cellspacing="0" width="454">
+    <!--{group}-->
+    <tr> 
+      <td colspan="2" bgcolor="#FFFFFF">&nbsp;&nbsp;&nbsp;<b><font size="2">%title%</font></b><br> 
+        <br></td>
+    <tr> 
+      <td width="29" bgcolor="#FFFFFF">&nbsp;</td>
+      <td width="425" align="left" bgcolor="#FFFFFF"> <font size="2">Modus:&nbsp;<a href="javascript:window.open('%path%/src/libs/plugins/pics/manual/attributes.htm#mode','Hilfe','scrollbars=yes,width=790,height=569');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0" align="middle"></a></font><br> 
+        <input type="radio" name="groups[%id%][mode]" value="0"%selected_active%> 
+        <font size="2">Aktiv</font> <input type="radio" name="groups[%id%][mode]" value="1"%selected_invisible%> 
+        <font size="2">Unsichtbar</font> <input type="radio" name="groups[%id%][mode]" value="2"%selected_deactivated%> 
+        <font size="2">Deaktiviert</font> </td bgcolor="#FFFFFF">
+    </tr>
+    <tr> 
+      <td colspan="2">&nbsp;</td>
+    </tr>
+    <!--{/group}-->
+  </table>
+<br>
+&nbsp;<br>
+  <input type="button" value="Zur&uuml;ck" onClick="window.location='?action=main&plugin=pics&SID=%SID%'">
+  &nbsp;<input type="submit" value="&Uuml;bernehmen">
+</form>

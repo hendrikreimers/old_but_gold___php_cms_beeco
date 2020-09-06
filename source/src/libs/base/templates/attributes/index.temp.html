@@ -1,0 +1,39 @@
+Wählen Sie einen Menüpunkt aus um dessen Untermenüs anzuzeigen.<br>
+Ändern Sie den Modus oder die Priorität der Menüpunkte und klicken Sie<br>
+anschließend auf "Übernehmen", bevor Sie zu einem anderen Untermenü wechseln<br>
+oder zurückkehren.<br>
+<br>
+<form method="post">
+<input type="hidden" name="action" value="attributes">
+<input type="hidden" name="init" value="update">
+<input type="hidden" name="SID" value="%SID%">
+<input type="button" value="Zur&uuml;ck" onClick="window.location = '?action=attributes&id=%back_parent%&SID=%SID%'">&nbsp;<input type="button" value="Hauptmen&uuml;" onClick="window.location='?action=main&SID=%SID%'">
+<input type="submit" value="&Uuml;bernehmen"><br>&nbsp;
+<br>
+<br>
+<table border="0" cellpadding="0" cellspacing="0" width="500">
+<!--{items}-->
+<tr>
+  <td colspan="4" bgcolor="#FFFFFF">&nbsp;&nbsp;&nbsp;<b><a href="%url%"><font size="2">%title%</font></a></b><br><br></td>
+<tr>
+<tr>
+  <td bgcolor="#FFFFFF">&nbsp;</td>
+  <td bgcolor="#FFFFFF" align="left" width="280">
+    <font size="2">Modus:&nbsp;<a href="javascript:window.open('%path%/src/libs/base/manual/attributes.htm#mode','Hilfe','scrollbars=yes,width=790,height=569');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0" align="middle"></a></font><br>
+    <input type="radio" name="items[%id%][mode]" value="1"%active_checked%><font size="2">Aktiv</font>
+    <input type="radio" name="items[%id%][mode]" value="2"%invisible_checked%><font size="2">Unsichtbar</font>
+    <input type="radio" name="items[%id%][mode]" value="0"%inactive_checked%><font size="2">Deaktiviert</font>
+  </td bgcolor="#FFFFFF">
+  <td bgcolor="#FFFFFF" width="10">&nbsp;</td>
+  <td bgcolor="#FFFFFF" align="left"><font size="2">Priorit&auml;t:&nbsp;<a href="javascript:window.open('%path%/src/libs/base/manual/attributes.htm#priority','Hilfe','scrollbars=yes,width=790,height=569');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0" align="middle"></a>
+<br></font><input type="text" size="4" name="items[%id%][priority]" value="%priority%"></td>
+</tr>
+<tr>
+  <td colspan="4">&nbsp;</td>
+</tr>
+<!--{/items}-->
+</table>
+<br>
+&nbsp;<br>
+<input type="button" value="Zur&uuml;ck" onClick="window.location = '?action=attributes&id=%back_parent%&SID=%SID%'">&nbsp;<input type="button" value="Hauptmen&uuml;" onClick="window.location='?action=main&SID=%SID%'">&nbsp;<input type="submit" value="&Uuml;bernehmen">
+</form>

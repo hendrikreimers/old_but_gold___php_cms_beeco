@@ -1,0 +1,33 @@
+<form method="post">
+<input type="hidden" name="action" value="edit">
+<input type="hidden" name="init" value="upd_pic">
+<input type="hidden" name="plugin" value="pics">
+<input type="hidden" name="SID" value="%SID%">
+<input type="hidden" name="id" value="%id%">
+<input type="hidden" name="group" value="%group%">
+<table width="304" border="0" cellspacing="5" cellpadding="0">
+  <tr align="left" valign="top">
+    <td width="105"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Gruppe</font></td>
+    <td width="193">
+	  <select name="new_group">
+	    <!--{group}--><option value="%id%"%selected%>%title%</option>
+		<!--{/group}-->
+	  </select>
+	</td>
+  </tr>
+  <tr align="left" valign="top">
+    <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Titel</font></td>
+    <td><input type="text" name="title" value="%title%"></td>
+  </tr>
+  <tr align="left" valign="top">
+    <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Beschreibung</font></td>
+    <td><textarea name="desc" cols="45" rows="8">%desc%</textarea></td>
+  </tr>
+  <tr align="left" valign="top">
+    <td>&nbsp;</td>
+    <td><input type="submit" value="Übernehmen">&nbsp;<input type="button" value="Zur&uuml;ck" onClick="window.location='?action=edit&init=listgroup&plugin=pics&group=%group%&SID=%SID%'"></td>
+  </tr>
+</table>
+</form>
+<br>
+&nbsp;

@@ -1,0 +1,16 @@
+<form method="post">
+<input type="hidden" name="action" value="edit">
+<input type="hidden" name="init" value="update">
+<input type="hidden" name="SID" value="%SID%">
+<input type="hidden" name="id" value="%id%">
+<font size="2">Titel<a href="javascript:window.open('%path%/src/libs/base/manual/add.htm#title','Hilfe','scrollbars=yes,width=790,height=569');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0" align="middle"></a></font><br>
+<input type="text" name="title" value="%title%"><br><br>
+<font size="2">Priorit&auml;t:&nbsp;<a href="javascript:window.open('%path%/src/libs/base/manual/add.htm#priority','Hilfe','scrollbars=yes,width=790,height=569');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0" align="middle"></a></font><br>
+<input type="text" size="4" name="priority" value="%priority%"><br>
+<br>
+<font size="2">Plugin:&nbsp;<a href="javascript:window.open('%path%/src/libs/base/manual/add.htm#plugin','Hilfe','scrollbars=yes,width=790,height=569');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0" align="middle"></a></font><br>
+<select name="pluginID">
+  <!--{plugin}--><option value="%id%"%selected%>%title%</option><!--{/plugin}-->
+</select><br><br>
+<input type="submit" name="add" value="&Uuml;bernehmen">&nbsp;<input type="button" value="Zur&uuml;ck" onClick="window.location='?id=%parent%&SID=%SID%&action=edit'"><br>
+</form>

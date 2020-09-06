@@ -1,0 +1,51 @@
+//Load the Image and shows it...
+function callback_showPic(xmlDoc) {
+	//IMG Data
+	var xmlImg = xmlDoc.getElementsByTagName('result').item(0).getElementsByTagName('img').item(0);
+	
+	//Get the Tags to modify
+	var indTag      = document.getElementById('picsDetailIndicatorAJAX'); //The Data
+	var imgDivTag   = document.getElementById('picsDetailImgLayerAJAX'); //The Data
+	var imgTag      = document.getElementById('picsDetailImgAJAX');      //The Image
+	var imgTitleTag = document.getElementById('picsDetailImgTitleAJAX'); //The Title
+	var imgDescTag  = document.getElementById('picsDetailImgDescAJAX');  //The Description
+	
+	//Set the Image
+	imgTag.src          = xmlImg.firstChild.data;
+	imgTag.style.width  = xmlImg.getAttribute('width')+'px';
+	imgTag.style.height = xmlImg.getAttribute('height')+'px';
+	
+	//Modify the Title and Desc
+	if ( imgTitleTag ) {
+	    imgTitleTag.innerHTML = xmlImg.getAttribute('title');
+	}
+	if ( imgDescTag ) {
+	    imgDescTag.innerHTML = xmlImg.getAttribute('desc');
+	}
+	
+	//Center the Image
+	var imgWidth  = xmlImg.getAttribute('width');
+	var imgHeight = xmlImg.getAttribute('height');
+	centerImage(imgWidth,imgHeight);
+
+	//Display the Image
+	imgDivTag.style.display = 'block';
+	indTag.style.display = 'none';
+}
+
+//Load's the Template into the Body
+function callback_loadTpl(xmlDoc) {
+		//Select the Body and the Template
+		var body = document.getElementsByTagName('body')[0];
+	    var layer = xmlDoc.getElementsByTagName('result').item(0).getElementsByTagName('tpl').item(0).firstChild.data;
+
+	    //Base64 Decode the template
+	    b64arrays();
+	    layer = utf8d2t(b64t2d(layer));
+
+	    //Insert
+	    body.innerHTML = '<div id="picsBodyLayerAJAX">'+body.innerHTML+'</div>'+layer;
+
+		//Display the Background with loading the Image
+		displayBackground("1");
+}

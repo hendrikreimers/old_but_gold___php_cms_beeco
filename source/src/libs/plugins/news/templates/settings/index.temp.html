@@ -1,0 +1,16 @@
+<form method="post">
+<input type="hidden" name="action" value="settings">
+<input type="hidden" name="init" value="update">
+<input type="hidden" name="plugin" value="news">
+<input type="hidden" name="SID" value="%SID%">
+Einträge pro Seite: <a href="javascript:window.open('%path%/src/libs/plugins/news/manual/settings.htm#maxentries','Hilfe','scrollbars=yes,width=790,height=570');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0"></a><br>
+<input type="text" name="max_entries" size="4" value="%max_entries%">
+  <br>
+  <br>
+  <input type="hidden" name="SID2" value="%SID%">
+  W&ouml;rter pro Eintrag: <a href="javascript:window.open('%path%/src/libs/plugins/news/manual/settings.htm#maxentries','Hilfe','scrollbars=yes,width=790,height=570');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0"></a><br>
+  <input type="text" name="max_words" size="4" value="%max_words%">
+  <br>
+<br>
+<input type="submit" value="Übernehmen">&nbsp;<input type="button" value="Zurück" onClick="window.location='?action=main&plugin=news&SID=%SID%'">
+</form>

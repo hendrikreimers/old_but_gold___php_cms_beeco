@@ -1,0 +1,88 @@
+<!--{Title: 09. Templates}-->
+<!--{Description: Gestaltung der Design-Vorlagen}-->
+<html>
+<head>
+<title>Beeco - Manual</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+a { color:#000000; text-decoration: underline; }
+a:hover { color:#000000; text-decoration: none; }
+</style>
+</head>
+
+<body>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="frame-help.php">Zur&uuml;ck</a></font></p>
+<p align="justify"><font size="4" face="Verdana, Arial, Helvetica, sans-serif"><strong>Templates 
+  <font color="#FF0000">(Experts only! ;-)</font> </strong></font></p>
+<p align="justify"><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">1. 
+  Allgemeines </font></strong></p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Die 
+  Templates sind HTML Seiten die den Grundriss Ihrer Beeco Webseite bilden. 
+  Man k&ouml;nnte auch Design-Vorlagen meinen. </font><font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+  Beeco nutzt grunds&auml;tzlich das &quot;index&quot; Template, wenn es nicht 
+  durch Template-Override (siehe Einstellungen) aufgefordert wird ein anderes 
+  zu laden.</font></p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">In 
+  den Templates sind verschiedene Platzhalter und Abschnitte vorgegeben, die  
+   Beeco verwendet und den Inhalt bzw. das Men&uuml; einf&uuml;gt.</font></p>
+<p align="justify">&nbsp;</p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>2. 
+  Abschnitte</strong> </font></p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Alles 
+  was zwischen einem Abschnittsanfang und Ende steht, wird wiederholt ausgegeben. 
+  Entweder f&uuml;r das Men&uuml; bzw. Men&uuml;elemente, oder f&uuml;r die aktuelle Positionsanzeige. 
+  Folgende Wiederholungs Elemente sind verf&uuml;gbar.</font></p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">&lt;!--{menu[<font color="#FF0000">?</font>]}--&gt;<br>
+</font><font size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--{item}--&gt; 
+  ... &lt;!--{/item}--&gt;<br>
+&lt;!--{/menu[<font color="#FF0000">?</font>]}--&gt;<br>
+</font></p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">&lt;!--{position}--&gt; ... &lt;!--{/position}--&gt;</font></p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Der 
+  Abschnitt Menu steht f&uuml;r die Men&uuml;anzeige. Die Anzahl der Untermen&uuml;s 
+  wird in &quot;Tiefen&quot; definiert. Wenn Sie z.B. auf 3 Men&uuml;eintr&auml;ge 
+  klicken m&uuml;ssen um den Inhalt des 3 Untermen&uuml;punktes anzuzeigen, befinden 
+  Sie sich in Tiefe 2 (von 0 beginnend).</font></p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Damit 
+  Beeco wei&szlig; welche Men&uuml;tiefe es anzeigen soll wird anstelle 
+  des ? Fragezeichens die Men&uuml;tiefe angegeben. <strong>Bsp.: &lt;!--{menu[1]}--&gt; 
+  ... &lt;!--{/nenu[1]}--&gt; </strong> gibt den abschnitt menu[0] einmalig aus und alle darunterliegenden items so oft, 
+  bis alle obersten Men&uuml;punkte ausgegeben wurden.</font></p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Wenn 
+  Sie an einer festen Stelle aller Men&uuml;punkte ab einer bestimmten Tiefe anzeigen 
+  m&ouml;chten ohne unz&auml;hlige Abschnitte in Ihr Template einzuf&uuml;gen, 
+  h&auml;ngen Sie noch ein + (Plus) an die Men&uuml;tiefen Zahl an. Somit erkennt 
+  Beeco dass es aber der Tiefe X jeden weiteren Men&uuml;punkt dort auch 
+  anzeigen soll. <strong><br>
+  Bsp.: &lt;!--{menu[1+]--&gt; ... &lt;!--{/menu[1+]}--&gt;</strong></font></p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Eine verschachtelte Kombination dieser Elemente ist derzeit nicht m&ouml;glich. Sollten Sie Probleme bei der Darstellung des Men&uuml;s haben, versuchen Sie die Struktur zu &auml;ndenr. Eine Verbesserung (aber leider komplizierte) ist in Arbeit.</font></p>
+<p align="justify">&nbsp;</p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>3. 
+  Platzhalter</strong></font></p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Anstelle 
+  von Platzhaltern werden z.B. die Titel der Men&uuml;punkte ausgegeben oder Ihr 
+  Text. Es gibt 5 Arten von Platzhaltern: %url% %title% %text% %path% %cur_title% </font></p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">%url% 
+  und %title% werden in den oben angegebenen Abschnitten verwendet um den Titel 
+  und die Zieladresse einzuf&uuml;gen. Die zur Darstellung des Men&uuml;punktes 
+  n&ouml;tig sind. Somit bildet sich z.B. folgender Abschnitt:</font><br>
+  <em><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>&lt;!--{position}--&gt;&lt;a 
+  href=&quot;%url%&quot;&gt;%title%&lt;/a&gt;&amp;nbsp;&amp;gt;&amp;nbsp;&lt;!--{/position}--&gt;</strong></font></em></p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">%text% 
+  k&ouml;nnen Sie an jeder anderen Stelle einf&uuml;gen, au&szlig;erhalb der Abschnitte 
+  um den Inhalt des aktuellen Men&uuml;punktes ausgeben zu k&ouml;nnen.</font></p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Mit %cur_title% k&ouml;nnen Sie au&szlig;erhalb der Abschnitte ITEM und POSITION den Titel des aktuellen Men&uuml;punktes ausgeben, damit der Benutzer auch stets wei&szlig; wo er sich gerade befindet (wie Position nur kompakter somit). </font></p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">%path% 
+  ist wichtig wenn Sie z.B. Adressen (Pfade) zu anderen Dateien (wie Bilder) angeben 
+  m&ouml;chten. Damit auch die zus&auml;tzlichen Plugins auf die z.B. Grafiken 
+  des Templates zugreifen k&ouml;nnen muss der Pfad individuell angepasst werden. 
+  Dies wird von Beeco mit dem Platzhalter %path% &uuml;bernommen. Bei jeder 
+  Pfad Angabe die zur&uuml;ck auf den Hauptpfad von Beeco (dort wo die index.php 
+  sitzt) zur&uuml;ckf&uuml;hren soll geben Sie als erstes %path% an.<br>
+  Bsp: &lt;img src=&quot;%path%/gfx/user/header.jpg&quot;&gt;<br>
+  Sorgt daf&uuml;r dass auch das Kontakt Plugin das Template laden kann und die 
+  Grafiken dargestellt werden obwohl das Kontaktformular nicht von der index.php 
+  (Beeco Startseite) aufgerufen wird.</font></p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="frame-help.php">Zur&uuml;ck</a></font></p>
+</body>
+</html>

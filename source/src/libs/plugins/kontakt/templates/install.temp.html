@@ -1,0 +1,23 @@
+<form method="post">
+<input type="hidden" name="action" value="install">
+<input type="hidden" name="init" value="install">
+<input type="hidden" name="plugin" value="kontakt">
+<input type="hidden" name="SID" value="%SID%">
+E-Mail Empfänger:<br>
+<input type="text" name="mailto"><br>
+<br>
+Pflichtfelder:<br>
+<input type="checkbox" name="nachname" value="1" checked> Nachname<br>
+<input type="checkbox" name="vorname" value="1" checked> Vorname<br>
+<input type="checkbox" name="firma" value="1"> Firma<br>
+<input type="checkbox" name="strasse" value="1"> Strasse, Hausnr.<br>
+<input type="checkbox" name="plz" value="1"> PLZ<br>
+<input type="checkbox" name="ort" value="1"> Ort<br>
+<input type="checkbox" name="telefon" value="1"> Telefon<br>
+<input type="checkbox" name="email" value="1" checked> E-Mail<br>
+<input type="checkbox" name="nachricht" value="1" checked> Nachricht<br>
+<br>
+<input type="checkbox" name="security" value="1" checked> Sicherheitsabfrage<br>
+<br>
+<input type="submit" value="Installieren">&nbsp;<input type="button" value="Zurück" onClick="window.location='?action=pluginlist&SID=%SID%'">
+</form>

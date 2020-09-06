@@ -1,0 +1,61 @@
+<br />
+<form method="post" id="frm" onsubmit="document.getElementById('frm').send.disabled=true" action="">
+<div>
+<input type="hidden" name="seckey" value="%seckey%" />
+<input type="hidden" name="id" value="%id%" />
+</div>
+<table border="0" cellspacing="5" cellpadding="0">
+<tr valign="top">
+  <td><span class="konText">Anrede:</span></td>
+  <td><select name="anrede"><option value="Herr">Herr</option><option value="Frau">Frau</option></select></td>
+</tr>
+<tr valign="top">
+  <td><span class="konText">Nachname:</span></td>
+  <td><input name="nachname" type="text" value="%nachname%" maxlength="50" /></td>
+</tr>
+<tr valign="top">
+  <td><span class="konText">Vorname:</span></td>
+  <td><input name="vorname" type="text" value="%vorname%" maxlength="50" /></td>
+</tr>
+<tr valign="top">
+  <td><span class="konText">Firma:</span></td>
+  <td><input name="firma" type="text" value="%firma%" maxlength="100" /></td>
+</tr>
+<tr valign="top">
+  <td><span class="konText">Strasse,Hausnr.:</span></td>
+  <td><input name="strasse" type="text" value="%strasse%" maxlength="100" /></td>
+</tr>
+<tr valign="top">
+  <td><span class="konText">PLZ:</span></td>
+  <td><input name="plz" type="text" value="%plz%" maxlength="10" /></td>
+</tr>
+<tr valign="top">
+  <td><span class="konText">Ort:</span></td>
+  <td><input name="ort" type="text" value="%ort%" maxlength="100" /></td>
+</tr>
+<tr valign="top">
+  <td><span class="konText">Telefon:</span></td>
+  <td><input name="telefon" type="text" value="%telefon%" maxlength="50" /></td>
+</tr>
+<tr valign="top">
+  <td><span class="konText">E-Mail:</span></td>
+  <td><input name="email" type="text" value="%email%" maxlength="320" /></td>
+</tr>
+<tr valign="top">
+  <td><span class="konText">Nachricht:</span></td>
+  <td><textarea name="message" cols="40" rows="8">%message%</textarea></td>
+</tr>
+<tr valign="top">
+  <td><span class="konText">Sicherheitsabfrage:</span><br />
+    <span class="konSubtext">Bitte Zahlenfolge auf dem<br />Bild in das Feld eingeben!</span></td>
+  <td><input name="secval" type="text" maxlength="5" />
+  <br /><img src="%url_img%" alt="" /></td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td><input type="submit" name="send" value="Abschicken" /></td>
+</tr>
+</table>
+</form>
+<br />
+<br />

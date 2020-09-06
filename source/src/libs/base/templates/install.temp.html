@@ -1,0 +1,50 @@
+<form method="post">
+<input type="hidden" name="action" value="install">
+<input type="hidden" name="init" value="install">
+<hr color="#000000" width="300" align="left">
+<br>
+<b>Allgemein</b><br>
+<br>
+URL zur Startseite:<br>
+<input type="text" name="url" value="http://" size="40"><br>
+<br>
+<hr color="#000000" width="300" align="left">
+<br>
+<b>Textdarstellung</b><br>
+<br>
+Umwandlung von Zeilenumbrüchen? <a href="%path%/src/libs/base/manual/settings.htm#nl2br" target="_blank"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0"></a><br>
+<select name="auto_nl2br">
+  <option value="2">Auto</option>
+  <option value="1">Ja</option>
+  <option value="0">Nein</option>
+</select><br>
+<br>
+Tag-Filter (für Auto-Modus)  <a href="%path%/src/libs/base/manual/settings.htm#tagfilter" target="_blank"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0"></a><br>
+  <input type="text" name="tagfilter" value="b,i,u,a,img,font,h1,h2,h3,h4" size="40">
+  <br>
+<br>
+<hr color="#000000" width="300" align="left">
+<br>
+Template-Override <a href="%path%/src/libs/base/manual/settings.htm#override" target="_blank"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0"></a><br>
+<select name="template_override">
+  <option value="1">Ja</option>
+  <option value="0" selected>Nein</option>
+</select><br>
+<br>
+<hr color="#000000" width="300" align="left">
+<br>
+<b>Zugangsdaten</b> <a href="%path%/src/libs/base/manual/settings.htm#userdata" target="_blank"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0"></a><br>
+<br>
+Benutzername:<br>
+<input type="text" name="username"><br>
+<br>
+Passwort:<br>
+<input type="password" name="password"><br>
+<br>
+Passwort (erneut eingeben):<br>
+<input type="password" name="password_phrase"><br>
+<br>
+<hr color="#000000" width="300" align="left">
+<br>
+<input type="submit" value="Installieren">
+</form>

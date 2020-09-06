@@ -1,0 +1,31 @@
+<script type="text/javascript" src="%path%/src/libs/plugins/pics/includes/functions/js/ajax.functions.js" ></script>
+<script type="text/javascript" src="%path%/src/libs/plugins/pics/includes/functions/js/callback.functions.js" ></script>
+<script type="text/javascript" src="%path%/src/libs/plugins/pics/includes/functions/js/pics.functions.js" ></script>
+<div class="picsHeader">
+  <a href="%overview_url%">&Uuml;bersicht</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="%begin_url%">&lt;&lt;</a>&nbsp;&nbsp;<a href="%back_url%">Zur&uuml;ck</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="%next_url%">Vor</a>&nbsp;&nbsp;<a href="%end_url%">&gt;&gt;</a>
+</div>
+<div class="picsPages">
+  Seite %page_current% von %max_pages%
+</div>
+
+<div class="picsTable">
+<!--{row}-->
+  <div class="picsRow">
+
+    <!--{col}-->
+    <div class="picsCol">
+	  <div class="picsCurImage">
+	    <a href="%url%" onclick="loadImg('%ajaxUrl%'); return false;"><img src="%img%" alt="%title%" class="picsPic" /></a>
+      </div>
+      <div class="picsCurTitle">%title%</div>
+    </div>
+    <!--{/col}-->
+
+  </div>
+  <div class="picsRowEnd"></div>
+<!--{/row}-->
+</div>
+
+<div class="picsFooter">
+  <a href="%overview_url%">&Uuml;bersicht</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="%begin_url%">&lt;&lt;</a>&nbsp;&nbsp;<a href="%back_url%">Zur&uuml;ck</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="%next_url%">Vor</a>&nbsp;&nbsp;<a href="%end_url%">&gt;&gt;</a>
+</div>

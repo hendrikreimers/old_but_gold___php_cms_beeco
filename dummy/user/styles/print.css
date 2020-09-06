@@ -1,0 +1,59 @@
+
+form {
+	display: none;
+}
+
+/* MENÜLEISTE */
+div.menu {
+	display: none;
+}
+
+
+/* INFORMATIONSLEISTE */
+div.infoline {
+	display: none;
+}
+
+
+/* UNTERMENÜ */
+div.submenu {
+	display: none;
+}
+ul.submenu,li.submenu {
+	display: none;
+}
+
+
+/* TEXTFELD */
+div.textTitle {
+	display: none;
+}
+div.valid {
+    display: none;
+}
+div.bottomLine {
+    padding-top: 10px;
+    font-style: italic;
+    text-align: right;
+    color: #000000;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* TEXTANPASSUNG */
+body {
+    color: #000000;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+div.text {
+    color: #000000;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: left;
+}

@@ -1,0 +1,26 @@
+<form method="post">
+<input type="hidden" name="action" value="settings">
+<input type="hidden" name="init" value="update">
+<input type="hidden" name="plugin" value="kontakt">
+<input type="hidden" name="SID" value="%SID%">
+E-Mail Empfänger:<br>
+<input type="text" name="mailto" value="%mailto%"><br>
+<br>
+Pflichtfelder:<br>
+<br>
+<input type="checkbox" name="nachname" value="1"%nachname_checked%> Nachname<br>
+<input type="checkbox" name="vorname" value="1"%vorname_checked%> Vorname<br>
+<input type="checkbox" name="firma" value="1"%firma_checked%> Firma<br>
+<input type="checkbox" name="strasse" value="1"%strasse_checked%> Strasse, Hausnr.<br>
+<input type="checkbox" name="plz" value="1"%plz_checked%> PLZ<br>
+<input type="checkbox" name="ort" value="1"%ort_checked%> Ort<br>
+<input type="checkbox" name="telefon" value="1"%telefon_checked%> Telefon<br>
+<input type="checkbox" name="email" value="1"%email_checked%> E-Mail<br>
+<input type="checkbox" name="nachricht" value="1"%nachricht_checked%> Nachricht<br>
+<br>
+<input type="checkbox" name="security" value="1"%security_checked%> Sicherheitsabfrage<br>
+<br>
+<input type="submit" value="Übernehmen">
+&nbsp;<input type="button" value="Zurück" onClick="window.location='?action=pluginlist&SID=%SID%'">
+&nbsp;<input type="button" value="Deinstallieren" onClick="window.location='?action=uninstall&plugin=kontakt&SID=%SID%'">
+</form>

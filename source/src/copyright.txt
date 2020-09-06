@@ -1,0 +1,39 @@
+______________________________________________________
+________________//--| Beeco |--\\_______________________
+--------------------------------------------------------------
+Version: Beeco ONE
+int. Version: 26
+
+--------------------------------------------------------------
+Created by Hendrik Reimers
+
+Internet:
+http://www.kern23.de
+
+--------------------------------------------------------------
+
+Alle Rechte vorbehalten!
+Alle Urheber- und Nutzungsrechte liegen bei Hendrik Reimers.
+Eine Benutzungslizenz darf nur von Hendrik Reimers ausgestellt werden.
+Die Erlaubnis bezieht sich lediglich auf die Nutzung f�r die geforderte
+Internetseite und nicht auf andere Seiten.
+
+Verantwortlich f�r den Inhalt sowie der Gestaltung ist der Benutzer
+des CMS Systems. Hendrik Reimers �bernimmt keine Haftung,
+Gew�hrleistung oder Garantie f�r eventuelle Sch�den oder Verlust
+jeglicher Art, die z.B. in Verbindung mit dem CMS stehen.
+
+Die Weitergabe und Nutzung des CMS erfolgt ausschlie�lich unter
+ausdr�cklicher Genehmigung von Hendrik Reimers. Nicht erlaubte Nutzung
+oder ver�nderungen werden hiermit ausdr�cklich untersagt.
+
+Vielen Dank f�r Ihr Verst�ndnis!
+
+Letzte Worte:
+Viel Erfolg, viel Spa� und sch�nen Dank :-)
+
+PS: Der im CMS verwendete WYSWIG-Editor (http://tinymce.moxiecode.com)
+steht selbstverst�ndlich gem�� der GPL f�r OpenSource Produkte
+kostenlos zur Verf�gung, und kann im vollen Umfang (inkl. Sources)
+angefordert werden. Da es sich um ein Fremdprodukt handelt, kann
+ich keinerlei Gew�hr f�r dessen Funktion usw. geben. 

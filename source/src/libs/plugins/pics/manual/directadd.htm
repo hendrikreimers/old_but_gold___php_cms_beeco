@@ -1,0 +1,73 @@
+<!--{Title: 06. DirectADD}-->
+<!--{Description: Sonderfunktion für die Gestaltung}-->
+<html>
+<head>
+<title>Beeco - Manual</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+a { color:#000000; text-decoration: underline; }
+a:hover { color:#000000; text-decoration: none; }
+.Stil1 {color: #FF0000}
+.Stil3 {
+	color: #FF0000;
+	font-weight: bold;
+	font-style: italic;
+}
+.Stil5 {color: #009900; font-weight: bold; font-style: italic; }
+</style>
+</head>
+
+<body>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="frame-help.php">Zur&uuml;ck</a></font></p>
+<p align="justify"><font size="4" face="Verdana, Arial, Helvetica, sans-serif"><strong>DirectADD</strong></font></p>
+<p align="justify"><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">1. 
+  Allgemeines </font></strong></p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">DirectADD 
+  steht f&uuml;r direktes Hinzuf&uuml;gen. Mit dieser Funktion k&ouml;nnen Sie 
+  Teile der verf&uuml;gbaren Plugins, direkt in Ihrem Text eines Men&uuml;punktes 
+  nutzen. Dadurch k&ouml;nnen Sie zum Beispiel einen einzelnen G&auml;stebuch 
+  Eintrag von dem G&auml;stebuch Plugin direkt in Ihrem Text einzuf&uuml;gen. 
+  Oder Sie f&uuml;ge ein Bild aus dem Galerie Plugin direkt in Ihrem Text ein 
+  ohne auf die Galerie verweisen zu m&uuml;ssen.</font></p>
+<p align="justify">&nbsp;</p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong><a name="maxentries"></a>2. 
+  Nutzen von DirectADD</strong></font></p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Jedes 
+  Plugin hat einen Namen und einen Kurznamen (z.B. G&auml;stebuch bzw. gbook). 
+  Diese Namen werden in der roten Titelleiste angezeigt. Unter der roten Leiste 
+  finden Sie in Klammern den Kurznamen (z.B. gbook). Dieser Kurzname wird ben&ouml;tigt! 
+  Wenn Sie einen neuen Men&uuml;punkt (Typ: Inhalt) hinzuf&uuml;gen oder bearbeiten, 
+  nutzen Sie die DirectADD Funktion wie folgt: <strong>{kurzname:optionen}<br>
+  </strong><br>
+  Bsp:<strong> {gbook:last}<br>
+  </strong>Die genauen Optionen, sind bei jedem Plugin anders. Im n&auml;chsten 
+  Absatz finden Sie die Optionen f&uuml;r das aktuelle Plugin in dem Sie sich 
+  gerade befinden.</font></p>
+<p align="justify">&nbsp;</p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong><a name="html" id="html"></a>3. 
+  Optionen</strong></font></p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">F&uuml;r 
+  eine der DirectADD Funktionen ben&ouml;tigen Sie eine ID f&uuml;r ein Bild. 
+  Die ID von Bildern wird ihnen beim bearbeiten oder l&ouml;schen von Bildern 
+  angezeigt. Alle Optionen bestehen aus 2 Teilen. Einmal ob das Bild gro&szlig; 
+  oder klein angezeigt werden soll (small oder big) und dann der eigentlichen 
+  Option mit Komma getrennt (siehe unten).</font></p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>last</strong> 
+  = Zeigt immer das zuletzt eingef&uuml;gt Bild an (sofern die Gruppe aktiv ist): 
+  <strong>{pics:small,last}</strong> oder <strong>{pics:big,last}</strong><br>
+  <strong>ID</strong> = Anstatt ID verwenden Sie die Nummer die vor einem Bild 
+  um das anzuzeigen. Bsp: <strong>{pics:small,2} </strong>oder<strong> {pics:big,2}<br>
+  rand</strong> = Zeigt ein Bild aus allen Gruppen zuf&auml;llig an &Auml;ndert 
+  sich bei jedem neuen Aufruf. Bsp: <strong>{pics:small,rand} </strong>oder <strong>{pics:big,rand}<br>
+  short = </strong>Wenn Sie ein Bild einf&uuml;gen m&ouml;chten, es soll aber 
+  nicht auf die Gallerie verweisen (Link), k&ouml;nnen Sie zu den oberen 3 Optionen 
+  noch &quot;,short&quot; anh&auml;ngen. Bsp: <strong>{pics:small,last,short}</strong> 
+  oder anderes Beispiel <strong>{pics:big,rand,short}</strong></font></p>
+<p align="justify"><span class="Stil1"><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Hinweis: </font></strong></span><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Sollten Sie die Darstellungsmethode &quot;Einblenden&quot; in den Einstellungen aktiviert haben, m&uuml;ssen Sie den DirectADD Befehl <strong>{pics:ajax} </strong>zu beginn des Inhalts (und somit <strong>vor beginn</strong> der anderen DirectADD Funktionen <strong>einmalig</strong> eingef&uuml;gt haben. Dadurch wird gew&auml;hrleistet, dass die f&uuml;r das Einblenden ben&ouml;tigten Funktionen eingebunden werden.<br>
+  <br>
+  <em><strong>  Beispiel:</strong></em><br>
+  <span class="Stil5">&nbsp;&nbsp;&nbsp;Richtig:</span> <em><strong>{pics:ajax}</strong> Der Text <strong>{pics:small,21}</strong> noch mehr Text<strong> {pics:small,rand} </strong>viel mehr Text.<br>
+  </em><span class="Stil3">&nbsp;&nbsp;&nbsp;Falsch:</span> <em> Der Text <strong>{pics:small,21}</strong> noch mehr Text<strong> {pics:small,rand} </strong>viel mehr Text.</em> <em><strong>{pics:ajax}</strong></em><em>    </em></font></p>
+<p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="frame-help.php">Zur&uuml;ck</a></font></p>
+</body>
+</html>

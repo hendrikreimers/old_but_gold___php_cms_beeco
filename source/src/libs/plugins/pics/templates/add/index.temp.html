@@ -1,0 +1,42 @@
+<p>Geben Sie einen Titel in das leere Feld ein und klicken auf hinzuf&uuml;gen, um eine neue Gruppe zu erstellen.<br>
+  Um ein Bild in eine Gruppe einzuf&uuml;gen, klicken Sie auf den Titel der Gruppe. </p>
+<form method="post">
+<input type="hidden" name="action" value="add">
+<input type="hidden" name="plugin" value="pics">
+<input type="hidden" name="init" value="addgroup">
+<input type="hidden" name="SID" value="%SID%">
+<table width="643" height="109" border="0" cellpadding="0" cellspacing="5">
+  <tr align="left" valign="bottom">
+    <td width="144"><input type="button" value="Zur&uuml;ck" onClick="window.location='?action=main&plugin=pics&SID=%SID%'" style="width:144px"></td>
+    <td width="420">&nbsp;</td>
+    <td width="106">&nbsp;</td>
+  </tr>
+  <tr align="left" valign="bottom">
+    <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Neue Gruppe:</font><br>
+      <input type="text" name="groupname"></td>
+    <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Kurzbeschreibung:</font><br>
+      <input name="desc" type="text" size="50"></td>
+    <td><input type="submit" value="Hinzufügen"></td>
+  </tr>
+</table>
+<br>
+</form>
+<table width="606" border="0" cellspacing="0" cellpadding="0">
+<!--{group}-->
+  <tr>
+    <td width="14">&nbsp;</td>
+    <td width="592" bgcolor="#C5FFC1"><strong><a href="%url%"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">%title%&nbsp;(%count%)</font></a></strong></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="5" bgcolor="#FFFFFF"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">%desc%</font></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>  
+    <td>&nbsp;</td>
+  </tr>
+<!--{/group}-->
+</table>
+<p>
+  <input type="button" value="Zur&uuml;ck" onClick="window.location='?action=main&plugin=pics&SID=%SID%'" style="width:144px">
+</p>

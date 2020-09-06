@@ -1,0 +1,34 @@
+Als Vorschaubild geben Sie das Bild an, dass in der &Uuml;bersicht der Galerie angezeigt wird (am besten ein kleines Bild).
+Eine größere Version des Bildes geben Sie als Detail Bild an! (Es wird empfohlen nicht das Bild direkt von der Kamera zu verwenden). Es werden nur JPEG (JPG) Bilder akzeptiert! <br>
+<br>
+<b>Klicken Sie anschließend nur <font color="#FF0000">einmal</font> auf "Hinzufügen". Je nach Internetverbindung kann das Hinzufügen der Bilder einige Minuten dauern!</b><br>
+<br>
+<form method="post" enctype="multipart/form-data" name="picfrm" onSubmit="document.picfrm.send.disabled=true;document.picfrm.back.disabled=true;">
+<input type="hidden" name="action" value="add">
+<input type="hidden" name="plugin" value="pics">
+<input type="hidden" name="init" value="addpic">
+<input type="hidden" name="SID" value="%SID%">
+<input type="hidden" name="group" value="%group%">
+<table width="459" border="0" cellspacing="5" cellpadding="0">
+  <tr align="left" valign="top">
+    <td width="100"><font size="2">Titel</font></td>
+    <td width="325"><input type="text" name="title"></td>
+  </tr>
+  <tr align="left" valign="top">
+    <td><font size="2">Beschreibung</font></td>
+    <td><textarea cols="50" rows="7" name="desc"></textarea></td>
+  </tr>
+  <tr align="left" valign="top">
+    <td><font size="2">Vorschau Bild</font></td>
+    <td><input type="file" name="previewfile" accept="image/jpeg"></td>
+  </tr>
+  <tr align="left" valign="top">
+    <td><font size="2">Detail Bild</font></td>
+    <td><input type="file" name="detailfile" accept="image/jpeg"></td>
+  </tr>
+  <tr align="left" valign="top">
+    <td>&nbsp;</td>
+    <td><input type="submit" value="Hinzufügen" name="send">&nbsp;<input type="button" value="Zurück" name="back" onClick="window.location='?action=add&plugin=pics&SID=%SID%'"></td>
+  </tr>
+</table>
+</form>

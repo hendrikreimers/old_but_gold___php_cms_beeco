@@ -1,0 +1,56 @@
+/* NEWS */
+div.newsHeader {
+	margin-bottom: 5px;
+	float: left;
+}
+
+.newsFooter {
+	margin-top: 10px;
+}
+
+.newsPages {
+	margin-bottom: 20px;
+	float: right;
+}
+
+.newsCurHeader {
+	padding: 2px;
+	margin-bottom: 3px;
+	background-color: #EEEEEE;
+	text-align: left;
+	margin: auto;
+	float: left;
+	width: 504px;
+}
+
+.newsTitle {
+	text-align: left;
+	float: left;
+}
+
+.newsCurTimestamp {
+	float: right;
+	text-align: left;
+}
+
+.newsCurText {
+	clear: both;
+	margin-bottom: 20px;
+	text-align: left;
+	padding: 2px;
+}
+
+a.newsDetLink {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.newsDetLink:hover {
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.newsMoreLink {
+	padding-top: 10px;
+	text-align: right;
+}

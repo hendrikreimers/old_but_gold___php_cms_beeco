@@ -1,0 +1,54 @@
+<form method="post">
+<input type="hidden" name="action" value="settings">
+<input type="hidden" name="init" value="update">
+<input type="hidden" name="SID" value="%SID%">
+<input type="submit" value="&Uuml;bernehmen">&nbsp;<input type="button" value="Zur&uuml;ck" onClick="window.location = '?SID=%SID%&action=main'"><br><br>
+<hr color="#000000" width="300" align="left">
+<br>
+<b>Allgemein</b><br>
+<br>
+URL zur Startseite:<br>
+<input type="text" name="url" value="%url%" size="40"><br>
+<br>
+<hr color="#000000" width="300" align="left">
+<br>
+<b>Textdarstellung</b><br>
+<br>
+Umwandlung von Zeilenumbrüchen? <a href="javascript:window.open('%path%/src/libs/base/manual/settings.htm#nl2br','Hilfe','scrollbars=yes,width=790,height=569');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0" align="middle" alt="Hilfe"></a><br>
+<select name="auto_nl2br">
+  <option value="2"%nl2br_selected_auto%>Auto</option>
+  <option value="1"%nl2br_selected_yes%>Ja</option>
+  <option value="0"%nl2br_selected_no%>Nein</option>
+</select><br>
+<br>
+Tag-Filter (für Auto-Modus)  <a href="javascript:window.open('%path%/src/libs/base/manual/settings.htm#tagfilter','Hilfe','scrollbars=yes,width=790,height=569');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0" align="middle" alt="Hilfe"></a><br>
+<input type="text" name="tagfilter" value="%tagfilter%" size="40"><br>
+<br>
+<hr color="#000000" width="300" align="left">
+<br>
+Template-Override <a href="javascript:window.open('%path%/src/libs/base/manual/settings.htm#override','Hilfe','scrollbars=yes,width=790,height=569');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0" align="middle" alt="Hilfe"></a><br>
+<select name="template_override">
+  <option value="1"%override_selected_yes%>Ja</option>
+  <option value="0"%override_selected_no%>Nein</option>
+</select><br>
+<br>
+<hr color="#000000" width="300" align="left">
+<br>
+<b>Zugangsdaten</b> <a href="javascript:window.open('%path%/src/libs/base/manual/settings.htm#userdata','Hilfe','scrollbars=yes,width=790,height=569');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0" align="middle" alt="Hilfe"></a><br>
+<br>
+Benutzername:<br>
+<input type="text" name="username" value="%username%"><br>
+<br>
+Altes Passwort:<br>
+<input type="password" name="old_password"><br>
+<br>
+Neues Passwort:<br>
+<input type="password" name="password"><br>
+<br>
+Passwort erneut eingeben:<br>
+<input type="password" name="password_phrase"><br>
+<br>
+<hr color="#000000" width="300" align="left">
+<br>
+<input type="submit" value="&Uuml;bernehmen">&nbsp;<input type="button" value="Zur&uuml;ck" onClick="window.location = '?SID=%SID%&action=main'">
+</form>

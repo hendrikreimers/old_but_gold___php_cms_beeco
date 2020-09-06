@@ -1,0 +1,58 @@
+<form method="post">
+<input type="hidden" name="action" value="settings">
+<input type="hidden" name="init" value="update">
+<input type="hidden" name="plugin" value="pics">
+  <p> 
+    <input type="hidden" name="SID" value="%SID%">
+    <br>
+    <input name="submit" type="submit" value="&Uuml;bernehmen">
+    <input name="button" type="button" onClick="window.location='?action=main&plugin=pics&SID=%SID%'" value="Zurück">
+    <br>
+    <br>
+    Einträge pro Zeile: <a href="javascript:window.open('%path%/src/libs/plugins/pics/manual/settings.htm#maxcols','Hilfe','scrollbars=yes,width=790,height=570');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0"></a><br>
+    <input name="max_cols" type="text" id="max_cols" value="%max_cols%" size="4">
+    <br>
+    <br>
+    Anzahl der Zeilen: <a href="javascript:window.open('%path%/src/libs/plugins/pics/manual/settings.htm#maxrows','Hilfe','scrollbars=yes,width=790,height=570');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0"></a><br>
+    <input name="max_rows" type="text" id="max_rows" value="%max_rows%" size="4">
+  </p>
+  <hr color="#000000" width="400" align="left">
+  <p>Darstellung: <a href="javascript:window.open('%path%/src/libs/plugins/pics/manual/settings.htm#popup','Hilfe','scrollbars=yes,width=790,height=570');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0"></a><br>
+    <select name="view">
+      <option value="1"%view_select_trueA%>Fenster (PopUp)</option>
+      <option value="2"%view_select_trueB%>Einblenden</option>
+      <option value="0"%view_select_false%>Standard</option>
+    </select>
+</p>
+<p>Sortierung (Bildergruppen): <a href="javascript:window.open('%path%/src/libs/plugins/pics/manual/settings.htm#order','Hilfe','scrollbars=yes,width=790,height=570');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0"></a><br>
+    <select name="order_groups">
+      <option value="1"%orderG_select_true%>Aufwärts</option>
+      <option value="0"%orderG_select_false%>Abwärts</option>
+    </select>
+</p>
+<p>Sortierung (Bilder): <a href="javascript:window.open('%path%/src/libs/plugins/pics/manual/settings.htm#order','Hilfe','scrollbars=yes,width=790,height=570');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0"></a><br>
+    <select name="order_items">
+      <option value="1"%orderI_select_true%>Aufwärts</option>      
+      <option value="0"%orderI_select_false%>Abwärts</option>
+    </select>
+</p>
+  <hr color="#000000" width="400" align="left">
+  <p>Automatische Bildanpassung: <a href="javascript:window.open('%path%/src/libs/plugins/pics/manual/settings.htm#autoresize','Hilfe','scrollbars=yes,width=790,height=570');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0"></a><br>
+    <select name="auto_resize">
+	  <option value="1"%auto_resize_true%>Ja</option>
+	  <option value="0"%auto_resize_false%>Nein</option>
+	</select>
+</p>
+  <p>H&ouml;chstbreite Vorschau<br>
+    (nur bei Autom. Bildanpassung): <a href="javascript:window.open('%path%/src/libs/plugins/pics/manual/settings.htm#autoresize','Hilfe','scrollbars=yes,width=790,height=570');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0"></a><br>
+    <input name="max_preview_width" type="text" id="max_preview_width" value="%max_preview_width%" size="8">
+  </p>
+  <p>H&ouml;chstbreite Detailansicht<br>
+    (nur bei Autom. Bildanpassung): <a href="javascript:window.open('%path%/src/libs/plugins/pics/manual/settings.htm#autoresize','Hilfe','scrollbars=yes,width=790,height=570');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0"></a><br>
+    <input name="max_details_width" type="text" id="max_details_width" value="%max_details_width%" size="8">
+    <br>
+    <br>
+    <input type="submit" value="&Uuml;bernehmen">
+    <input type="button" value="Zurück" onClick="window.location='?action=main&plugin=pics&SID=%SID%'">
+  </p>
+</form>

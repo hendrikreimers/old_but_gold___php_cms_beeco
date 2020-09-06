@@ -1,0 +1,33 @@
+Als Bild geben Sie eine gro&szlig;e Version des Bildes an (kein Vorschau Bild). Es wird automatisch auf die passenden Gr&ouml;&szlig;en umgerechnet wie es in den Einstellungen definiert wurde. Achten Sie darauf dass die Dateigr&ouml;&szlig;e des Bildes nicht der unten angegebenen Dateigr&ouml;&szlig;e &uuml;berschreitet. Es werden nur JPEG (JPG) Bilder akzeptiert!<br>
+<br>
+<b>Klicken Sie anschließend nur <font color="#FF0000">einmal</font> auf "Hinzufügen". Je nach Internetverbindung kann das Hinzufügen der Bilder einige Minuten dauern!</b><br>
+<br>
+<form method="post" enctype="multipart/form-data" name="picfrm" onSubmit="document.picfrm.send.disabled=true;document.picfrm.back.disabled=true;">
+<input type="hidden" name="action" value="add">
+<input type="hidden" name="plugin" value="pics">
+<input type="hidden" name="init" value="addpic">
+<input type="hidden" name="SID" value="%SID%">
+<input type="hidden" name="group" value="%group%">
+<table width="459" border="0" cellspacing="5" cellpadding="0">
+  <tr align="left" valign="top">
+    <td width="100"><font size="2">Titel</font></td>
+    <td width="325"><input type="text" name="title"></td>
+  </tr>
+  <tr align="left" valign="top">
+    <td><font size="2">Beschreibung</font></td>
+    <td><textarea cols="50" rows="7" name="desc"></textarea></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><font size="2">Maximale Dateigr&ouml;&szlig;e betr&auml;gt: %max_size%</font></td>
+  </tr>
+  <tr align="left" valign="top">
+    <td><font size="2">Bild</font></td>
+    <td><input type="file" name="origfile" maxlength="%max_form_size%" accept="image/jpeg"></td>
+  </tr>
+  <tr align="left" valign="top">
+    <td>&nbsp;</td>
+    <td><input type="submit" value="Hinzufügen" name="send">&nbsp;<input type="button" value="Zurück" name="back" onClick="window.location='?action=add&plugin=pics&SID=%SID%'"></td>
+  </tr>
+</table>
+</form>

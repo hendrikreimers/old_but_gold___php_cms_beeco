@@ -1,0 +1,27 @@
+<script type="text/javascript" src="%path%/src/wysiwyg/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript" src="%path%/src/wysiwyg/functions/tinymce.functions.js"></script>
+<script type="text/javascript">
+	initEditor();
+</script>
+<form method="post" name="update">
+<input type="hidden" name="action" value="edit">
+<input type="hidden" name="init" value="update">
+<input type="hidden" name="SID" id="SID" value="%SID%">
+<input type="Hidden" name="type" value="%type%">
+<input type="hidden" name="id" value="%id%">
+<table>
+<tr>
+  <td colspan="2" valign="top" align="left"><input type="submit" name="pressed" value="&Uuml;bernehmen">&nbsp;<input type="submit" value="Vorschau">&nbsp;<input type="button" value="Zur&uuml;ck" onClick="window.location='?id=%parent%&SID=%SID%&action=edit'">&nbsp;<input type="button" value="Editor aktivieren" onclick="toggleEditor('text','toggleBtn');" style="font-weight: bold;" id="toggleBtn" /></td>
+</tr>
+<tr>
+  <td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+  <td valign="top" width="150"><font size="2">Titel</font><br><input type="text" name="title" value="%title%"></td>
+  <td valign="top"><font size="2">Priorit&auml;t:&nbsp;<a href="javascript:window.open('%path%/src/libs/base/manual/edit.htm#priority','Hilfe','scrollbars=yes,width=790,height=569');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0" align="top" valign="top"></a></font><br><input type="text" size="4" name="priority" value="%priority%"></td>
+</tr>
+</table>
+<br>
+<textarea cols="70" rows="20" name="text" id="text">%content%</textarea><br>
+<input type="submit" name="pressed" value="&Uuml;bernehmen">&nbsp;<input type="submit" value="Vorschau">&nbsp;<input type="button" value="Zur&uuml;ck" onClick="window.location='?id=%parent%&SID=%SID%&action=edit'">
+</form>

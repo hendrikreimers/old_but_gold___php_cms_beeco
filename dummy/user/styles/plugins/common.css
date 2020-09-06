@@ -1,0 +1,10 @@
+/* ALLGEMEINE ANPASSUNGEN */
+    /* PRINT ANPASSUNGEN */
+    @media print {
+	div.picsHeader, div.picsFooter, div.picsPages,
+	td.timeUrl, div.timeMoreLink,
+	div.newsHeader, div.newsFooter,
+	div.gbookAdd, div.gbookPages, div.gbookCurPage, div.gbookCurLinks {
+	    display: none;
+	}
+    }

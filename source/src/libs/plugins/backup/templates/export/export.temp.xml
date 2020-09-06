@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<backup date="%backup_date%" name="CMS_SE_BACKUP">
+
+  <base id="%base_id%" name="base" title="%base_title%">
+    <settings>
+      <!--{base_settings}-->
+      <%key%>%value%</%key%>
+      <!--{/base_settings}-->
+    </settings>
+	
+    <data>
+      <!--{base_item}-->
+      <item_%id%>
+        <id>%id%</id>
+		<plugin_id>%plugin_id%</plugin_id>
+		<parent>%parent%</parent>
+		<priority>%priority%</priority>
+        <title>%title%</title>
+        <visible>%visible%</visible>
+        <active>%active%</active>
+        <content>%content%</content>
+        <manual>%manual%</manual>
+        <redirect>%redirect%</redirect>
+      </item_%id%>
+      <!--{/base_item}-->
+    </data>
+  </base>
+
+  <plugin_kontakt id="%kontakt_id%" name="kontakt" title="%kontakt_title%" installed="%kontakt_installed%">
+    <settings>
+      <!--{kontakt_settings}-->
+      <%key%>%value%</%key%>
+      <!--{/kontakt_settings}-->
+    </settings>
+  </plugin_kontakt>
+
+  <plugin_gbook id="%gbook_id%" name="gbook" title="%gbook_title%" installed="%gbook_installed%">
+    <settings>
+      <!--{gbook_settings}-->
+      <%key%>%value%</%key%>
+      <!--{/gbook_settings}-->
+    </settings>
+
+    <data>
+      <!--{gbook_entry}-->
+      <entry_%id%>
+        <id>%id%</id>
+        <ip>%ip%</ip>
+        <host>%host%</host>
+        <date>%date%</date>
+        <time>%time%</time>
+        <name>%name%</name>
+        <email>%email%</email>
+        <icq>%icq%</icq>
+        <homepage>%homepage%</homepage>
+        <text>%text%</text>
+        <comment>%comment%</comment>
+      </entry_%id%>
+      <!--{/gbook_entry}-->
+    </data>
+  </plugin_gbook>
+
+  <plugin_news id="%news_id%" name="news" title="%news_title%" installed="%news_installed%">
+    <settings>
+      <!--{news_settings}-->
+      <%key%>%value%</%key%>
+      <!--{/news_settings}-->
+    </settings>
+
+    <data>
+      <!--{news_entry}-->
+      <entry_%id%>
+        <id>%id%</id>
+        <date>%date%</date>
+        <time>%time%</time>
+        <title>%title%</title>
+        <text>%text%</text>
+      </entry_%id%>
+      <!--{/news_entry}-->
+    </data>
+  </plugin_news>
+
+  <plugin_time id="%time_id%" name="time" title="%time_title%" installed="%time_installed%">
+    <settings>
+      <!--{time_settings}-->
+      <%key%>%value%</%key%>
+      <!--{/time_settings}-->
+    </settings>
+
+    <data>
+      <!--{time_entry}-->
+      <entry_%id%>
+        <id>%id%</id>
+        <date>%date%</date>
+        <title>%title%</title>
+        <descid>%descid%</descid>
+        <desc>%desc%</desc>
+      </entry_%id%>
+      <!--{/time_entry}-->
+    </data>
+  </plugin_time>
+
+  <plugin_pics id="%pics_id%" name="pics" title="%pics_title%" installed="%pics_installed%">
+    <settings>
+      <!--{pics_settings}-->
+      <%key%>%value%</%key%>
+      <!--{/pics_settings}-->
+    </settings>
+
+    <groups>
+      <!--{pics_group}-->
+      <group_%id%>
+        <id>%id%</id>
+		<title>%title%</title>
+        <mode>%mode%</mode>
+        <desc>%desc%</desc>
+      </group_%id%>
+      <!--{/pics_group}-->
+    </groups>
+
+    <items>
+      <!--{pics_item}-->
+      <item_%id%>
+        <id>%id%</id>
+        <groupid>%group_id%</groupid>
+        <title>%title%</title>
+        <desc>%desc%</desc>
+      </item_%id%>
+      <!--{/pics_item}-->
+    </items>
+  </plugin_pics>
+
+</backup>

@@ -1,0 +1,5 @@
+<folders>
+<!--{group}-->
+<folder name="%title%" id="%id%" />
+<!--{/group}-->
+</folders>

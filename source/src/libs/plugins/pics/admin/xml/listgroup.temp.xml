@@ -1,0 +1,5 @@
+<files>
+<!--{entries}-->
+  <file id="%id%" url="%url%" size="%size%" small="%small%"><![CDATA[%title%]]></file>
+<!--{/entries}-->
+</files>

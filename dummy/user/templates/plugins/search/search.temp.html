@@ -1,0 +1,36 @@
+<form method="post" action="">
+<div>
+<input type="hidden" name="id" value="%id%" />
+<input type="hidden" name="init" value="search" />
+<input type="hidden" name="style" value="%style%" />
+Suchen nach:<br />
+<input type="text" size="40" name="search_text" value="%search_text%" />&nbsp;<input type="submit" value="Suchen" /><br />
+<input type="radio" name="search_type" value="1" %type1_checked%/>Exakt&nbsp;<input type="radio" name="search_type" value="2" %type2_checked%/>Jedes Wort&nbsp;<input type="radio" name="search_type" value="3" %type3_checked%/>Eines der W&ouml;rter
+</div>
+</form>
+<b>Die Suche ergab %match_count% Treffer.</b>
+<br />
+<br />
+<!--{base}-->
+<b>Men&uuml;punkt&#58; </b><a href="%url%">%title%</a><br />
+%text%<br />
+<br />
+<!--{/base}-->
+
+<!--{news}-->
+<b>News&#58; </b><a href="%url%">%title%</a><br />
+%text%<br />
+<br />
+<!--{/news}-->
+
+<!--{time}-->
+<b>Termin&#58; </b><a href="%url%">%title%</a><br />
+%text%<br />
+<br />
+<!--{/time}-->
+
+<!--{picgroups}-->
+<b>Bildgruppe&#58; </b><a href="%url%">%title%</a><br />
+%text%<br />
+<br />
+<!--{/picgroups}-->

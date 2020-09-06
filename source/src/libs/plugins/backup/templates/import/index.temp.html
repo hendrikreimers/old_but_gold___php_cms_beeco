@@ -1,0 +1,23 @@
+Geben Sie die Sicherungsdatei auf Ihrem lokalen Computer an, um die Sicherung zu importieren.<br />
+<strong>Achtung!</strong> Alle derzeitigen Daten gehen dabei verloren. Es werden nur Daten von dem CMS<br />
+und der aktuell installierten Plugins importiert.<br>
+<br>
+<br>
+<form method="post" enctype="multipart/form-data" name="picfrm" onSubmit="document.picfrm.send.disabled=true;document.picfrm.back.disabled=true;">
+<input type="hidden" name="SID" value="%SID%">
+<input type="hidden" name="action" value="import">
+<input type="hidden" name="init" value="import">
+<input type="hidden" name="plugin" value="backup">
+<table width="276" border="0" cellspacing="5" cellpadding="0">
+  <tr>
+    <td><font size="2">Passwort:</font><br><input type="password" name="pass">
+  </tr>
+  <tr align="left" valign="top">
+    <td><font size="2">Backup-Datei:</font><br><input type="file" name="backup" maxlength="%max_form_size%" accept="application/xml"></td>
+  </tr>
+  <tr align="left" valign="top">
+    <td><input type="submit" value="Importieren" name="send">
+    &nbsp;<input type="button" value="Zurück" name="back" onClick="window.location='?action=main&plugin=backup&SID=%SID%'"></td>
+  </tr>
+</table>
+</form>

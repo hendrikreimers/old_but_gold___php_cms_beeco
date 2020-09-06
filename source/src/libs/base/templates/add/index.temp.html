@@ -1,0 +1,48 @@
+Wählen Sie einen Menüpunkt aus um dessen Untermenüs anzuzeigen.<br>
+Füllen Sie anschließend das Eingabe Formular aus um dort einen Menüpunkt zu erstellen.<br>
+<br>
+<form method="post">
+<input type="hidden" name="action" value="add">
+<input type="hidden" name="init" value="form">
+<input type="hidden" name="SID" value="%SID%">
+<input type="hidden" name="parent" value="%parent%">
+<input type="button" value="Zur&uuml;ck" onClick="window.location = '?id=%back_parent%&SID=%SID%&action=add'">&nbsp;<input type="button" value="Hauptmen&uuml;" onClick="window.location='?SID=%SID%&action=main'"><br>&nbsp;
+<table border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      <font size="2">Titel:</font><br>
+      <input type="text" name="title">
+    </td>
+    <td>&nbsp;</td>
+    <td>
+      <font size="2">Typ: <a href="javascript:window.open('%path%/src/libs/base/manual/add.htm#type','Hilfe','scrollbars=yes,width=790,height=569');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0" align="middle"></a></font><br>
+      <select name="type">
+         <option value="1">Inhalt</option>
+         <option value="2">Weiterleitung</option>
+         <option value="3">Manuell</option>
+         <option value="4">Plugin</option>
+      </select>
+    </td>
+    <td>&nbsp;</td>
+    <td>
+      &nbsp;<br>
+      <input type="submit" value="Hinzuf&uuml;gen">
+    </td>
+  </tr>
+</table>
+<br>
+<br>
+<table border="0" cellpadding="0" cellspacing="0" width="500">
+<!--{items}-->
+<tr>
+  <td bgcolor="#FFFFFF">&nbsp;&nbsp;&nbsp;<b><a href="%url%"><font size="2">%title%</font></a></b></td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+</tr>
+<!--{/items}-->
+</table>
+<br>
+&nbsp;<br>
+<input type="button" value="Zur&uuml;ck" onClick="window.location = '?id=%back_parent%&SID=%SID%&action=add'">&nbsp;<input type="button" value="Hauptmen&uuml;" onClick="window.location='?SID=%SID%&action=main'">
+</form>

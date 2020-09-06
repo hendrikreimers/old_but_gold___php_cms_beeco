@@ -1,0 +1,27 @@
+<form method="post">
+<input type="hidden" name="action" value="settings">
+<input type="hidden" name="init" value="update">
+<input type="hidden" name="plugin" value="gbook">
+<input type="hidden" name="SID" value="%SID%">
+Einträge pro Seite: <a href="javascript:window.open('%path%/src/libs/plugins/gbook/manual/settings.htm#maxentries','Hilfe','scrollbars=yes,width=790,height=570');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0"></a><br>
+<input type="text" name="max_entries" size="4" value="%max_entries%"><br>
+<br>
+HTML erlauben? <a href="javascript:window.open('%path%/src/libs/plugins/gbook/manual/settings.htm#html','Hilfe','scrollbars=yes,width=790,height=570');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0"></a><br>
+<select name="enable_html">
+  <option value="0">Nein</option>
+  <option value="1"%html_checked%>Ja</option>
+</select><br>
+<br>
+E-Mail Benachrichtung? <a href="javascript:window.open('%path%/src/libs/plugins/gbook/manual/settings.htm#notice','Hilfe','scrollbars=yes,width=790,height=570');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0"></a><br>
+<select name="send_notice">
+  <option value="0">Nein</option>
+  <option value="1"%notice_checked%>Ja</option>
+</select><br>
+<br>
+Benachrichtung versenden an (E-Mail):<br>
+<input type="text" name="notice_email" value="%notice_email%"><br>
+<br>
+<input type="checkbox" name="security" %security_checked%>Sicherheitsabfrage anschalten?<br>
+<br>
+<input type="submit" value="Übernehmen">&nbsp;<input type="button" value="Zurück" onClick="window.location='?action=main&plugin=gbook&SID=%SID%'">
+</form>

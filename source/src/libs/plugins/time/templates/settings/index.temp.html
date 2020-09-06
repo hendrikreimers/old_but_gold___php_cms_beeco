@@ -1,0 +1,16 @@
+<form method="post">
+<input type="hidden" name="action" value="settings">
+<input type="hidden" name="init" value="update">
+<input type="hidden" name="plugin" value="time">
+<input type="hidden" name="SID" value="%SID%">
+Farbe abgelaufene Termine: <a href="javascript:window.open('%path%/src/libs/plugins/time/manual/settings.htm','Hilfe','scrollbars=yes,width=790,height=570');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0"></a><br>
+<input type="text" name="color_past" size="8" value="%color_past%">
+  <br>
+  <br>
+  <input type="hidden" name="SID2" value="%SID%">
+  Farbe g&uuml;ltige Termine: <a href="javascript:window.open('%path%/src/libs/plugins/time/manual/settings.htm','Hilfe','scrollbars=yes,width=790,height=570');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0"></a><br>
+  <input type="text" name="color_present" size="8" value="%color_present%">
+  <br>
+<br>
+<input type="submit" value="Übernehmen">&nbsp;<input type="button" value="Zurück" onClick="window.location='?action=main&plugin=time&SID=%SID%'">
+</form>

@@ -1,0 +1,57 @@
+/* TERMINE */
+span.time {
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+table.time {
+	border: 0px;
+	width: 448px;
+	text-align: left;
+	margin: auto;
+}
+
+td.timeDate {
+	width: 92px;
+}
+
+.timeTitle {
+	width: 241px;
+}
+
+.timeUrl {
+	width: 53px;
+}
+
+div.timeMore {
+	text-align: left;
+}
+
+.timeHeader {
+	float: left;
+	display: block;
+	width: 100%;
+	background-color:#EEEEEE;
+	padding: 2px;
+}
+
+.timeMoreDate {
+	float: left;
+	padding-right: 10px;
+}
+
+.timeMoreTitle {
+	float: left;
+	font-weight: bold;
+}
+
+.timeMoreText {
+	clear: both;
+	padding: 2px;
+	padding-top: 10px;
+}
+
+.timeMoreLink {
+	padding-top: 10px;
+	text-align: right;
+}

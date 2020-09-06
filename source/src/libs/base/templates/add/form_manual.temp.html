@@ -1,0 +1,13 @@
+<form method="post">
+<input type="hidden" name="action" value="add">
+<input type="hidden" name="init" value="add">
+<input type="hidden" name="SID" value="%SID%">
+<input type="hidden" name="parent" value="%parent%">
+<input type="hidden" name="title" value="%title%">
+<font size="2">Priorit&auml;t:&nbsp;<a href="javascript:window.open('%path%/src/libs/base/manual/add.htm#priority','Hilfe','scrollbars=yes,width=790,height=569');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0" align="middle"></a></font><br>
+<input type="text" size="4" name="priority"><br>
+<br>
+<font size="2">Manueller URL:&nbsp;<a href="javascript:window.open('%path%/src/libs/base/manual/add.htm#manual','Hilfe','scrollbars=yes,width=790,height=569');void(0);"><img src="%path%/src/gfx/admin/icons/help.jpg" border="0" align="middle"></a></font><br>
+<input type="text" name="manual" size="40"><br><br>
+<input type="submit" name="add" value="Hinzuf&uuml;gen">&nbsp;<input type="button" value="Zur&uuml;ck" onClick="window.location='?id=%parent%&SID=%SID%&action=add'"><br>
+</form>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de">
+<head>
+<title>Bildergalerie - %title%</title>
+<link rel="Stylesheet" media="screen,projection" href="%path%/user/styles/standard.css" />
+<link rel="Stylesheet" href="%path%/user/styles/plugins/pics.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript" src="%path%/src/libs/plugins/pics/includes/functions/js/keys.functions.js"></script>
+<script type="text/javascript">
+	var backLink = '%url_back%';
+	var nextLink = '%url_forward%';
+</script>
+</head>
+
+<body onload="window.resizeTo(%pic_width%+10,%pic_height%+130)">
+
+<div class="picsDetHeader">
+  <div class="picsDetHeaderBack"><a href="%url_back%" class="picsLink">&lt;&lt;</a></div>
+  <div class="picsDetHeaderNext"><a href="%url_forward%" class="picsLink">&gt;&gt;</a></div>
+  <div class="picsDetHeaderOverview"><a href="%url_overview%" onclick="opener.focus(); return false;" class="picsLink">&Uuml;bersicht</a></div>
+</div>
+
+<div class="picsImage"><img src="%url_img%" alt="%title%" class="picsPic" /></div>
+<div class="info">
+  <div class="picsDetTitle"><span class="picsTitle">%title%</span></div>
+  <div class="picsDetDesc"><span class="picsDesc">%desc%</span></div>
+</div>
+
+</body>
+</html>
